@@ -1,0 +1,18 @@
+<div class="frame">
+    <h2 style="text-align:center">Coding Challenge</h2>
+    <div style="text-align: right; margin-right: 10px;">
+        <button class="addButton" routerLink="/add-post" routerLinkActive="active">Add Post</button>
+        <input class="search" type="search" [(ngModel)] = "searchTitle" placeholder="Search . . ."/>
+    </div>
+    <div  infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+        <div id="posts">
+            <div class="post" *ngFor="let post of (posts | search: searchTitle)">
+                <h3 class="title" (click)="toggle(post.id)">Title: "{{ post.title }}"<button class="delButton" (click)="deletePost(post.id)">Delete</button></h3>
+                <ng-container *ngIf="post.show">
+                    <h4 class="body">"{{ post.body }}"</h4>
+                </ng-container>
+            </div>     
+        </div>
+    </div>
+    <ngx-spinner></ngx-spinner>
+</div>

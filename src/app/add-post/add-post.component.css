@@ -1,0 +1,102 @@
+.frame {
+    min-width: 900px;
+}
+
+h2 {
+    color: #6B8E23;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.form {
+    width: 450px;
+    height: 430px;
+    background-color: #6B8E23;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.inputDiv {
+    text-align: center;
+    height: 95px;
+    font-size: 20px;
+}
+
+.inputField {
+    width: 400px;
+    height: 30px;
+    background-color:white;
+    color: #6B8E23;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textAreaDiv {
+    text-align: center;
+    height: 270px;
+    font-size: 20px;
+}
+
+.textAreaField {
+    width: 400px;
+    height: 200px;
+    background-color:white;
+    color: #6B8E23;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.errorMsg {
+    margin-top: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.buttonsDiv {
+    margin-right: 115px;
+}
+
+.buttons {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    bottom: 10px;
+    background-color: white;
+    color: #6B8E23;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+::placeholder {
+    opacity: 0.7;
+}
+  
+:-ms-input-placeholder {
+    opacity: 0.7;
+}
+  
+::-ms-input-placeholder {
+    opacity: 0.7;
+}

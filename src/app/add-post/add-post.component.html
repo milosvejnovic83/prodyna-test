@@ -1,0 +1,28 @@
+<div class="frame">
+    <h2 style="text-align:center">Add Post</h2>
+    <form class="form" #addForm="ngForm">
+        <div class="inputDiv">
+            <label>Add Title:</label><br>
+            <input name="title" class="inputField" type="text" [(ngModel)]="postData.title" placeholder="Title . . ." required #title="ngModel"/>
+            <div *ngIf="title.invalid && (title.dirty || title.touched)">
+                <div class="errorMsg" *ngIf="title.errors.required">
+                    *name is required
+                </div>
+            </div>
+        </div>
+        <div class="textAreaDiv">
+            <label>Add Body: </label><br>
+            <textarea name="body" class="textAreaField" [(ngModel)]="postData.body" placeholder="Body..." required #body="ngModel"></textarea>
+            <div *ngIf="body.invalid && (body.dirty || body.touched)">
+                <div class="errorMsg" style="margin-top: 0px;" *ngIf="body.errors.required">
+                    *body is required
+                </div>
+            </div>
+        </div>
+        <div class="buttonsDiv">
+            <button class="buttons" (click)="cancel()">Cancel</button>
+            <button class="buttons" [disabled]="addForm.form.invalid" (click)="addPost()">Save</button>
+        </div>
+    </form>
+    <ngx-spinner></ngx-spinner>
+</div>

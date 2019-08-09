@@ -1,0 +1,80 @@
+h2, h3, h4 {
+    color: #6B8E23;
+}
+
+.frame {
+    min-width: 900px;
+}
+
+.addButton {
+    width: 100px;
+    height: 30px;
+    background-color: #6B8E23;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search {
+    width: 200px;
+    height: 30px;
+    background-color:white;
+    color: #6B8E23;
+    font-size: 16px;
+    border: 2px solid #6B8E23;
+    padding-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delButton {
+    width: 70px;
+    height: 20px;
+    margin: 5px;
+    background-color: white;
+    color: #6B8E23;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.title {
+    height: 40px;
+    background-color: #6B8E23;
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.post {
+    color: #6B8E23;
+    border-right: 2px solid #6B8E23;
+    border-bottom: 2px solid #6B8E23;   
+    border-left: 2px solid #6B8E23;
+    margin: 10px;
+}
+
+.body {
+    margin-left: 20px;
+}
+
+::placeholder {
+    opacity: 0.7;
+}
+  
+:-ms-input-placeholder {
+    opacity: 0.7;
+}
+  
+::-ms-input-placeholder {
+    opacity: 0.7;
+}
